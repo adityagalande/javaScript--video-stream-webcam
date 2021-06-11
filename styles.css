@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  user-select: none;
+}
+
+body {
+  background: #e4fd00dc;
+  font-size: 10px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #293335;
+  padding: 1.15rem 2.60rem;
+  border: 1px solid #293335;
+  border-radius: 10rem;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 17%);
+  transition: all .2s;
+  margin: 2.2rem;
+}
+
+.reset-green-screen {
+  float: right;
+}
+
+canvas {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rgb {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  line-height: 1rem;
+  padding: 2rem;
+  padding-right: 0;
+  width: 2rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.green-screen-active {
+  background: rgb(158, 158, 158);
+}
+
+.photobooth {
+  background: white;
+  border-radius: 2px;
+  margin: 2rem auto;
+  max-width: 70%;
+  min-width: 30%;
+  padding: 1rem;
+}
+
+.photobooth:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.player {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  width: 100px;
+}
+
+.strip a:nth-child(5n+1) img {
+  transform: rotate(10deg);
+}
+
+.strip a:nth-child(5n+2) img {
+  transform: rotate(-2deg);
+}
+
+.strip a:nth-child(5n+3) img {
+  transform: rotate(8deg);
+}
+
+.strip a:nth-child(5n+4) img {
+  transform: rotate(-11deg);
+}
+
+.strip a:nth-child(5n+5) img {
+  transform: rotate(12deg);
+}
